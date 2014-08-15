@@ -1,0 +1,5 @@
+# run the sql container, link it to the data container and bash into
+docker run -i -t --volumes-from docker-mysql-data docker-centos-mysql bash
+ 
+# run the mysql container and link it to the data container
+docker run -d -t --volumes-from docker-mysql-data docker-centos-mysql
